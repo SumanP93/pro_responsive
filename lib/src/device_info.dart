@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'screen_type.dart';
 
+/// Holds information about the device's screen type, orientation, and size.
 class DeviceInfo {
   final ScreenType screenType;
   final Orientation orientation;
@@ -17,6 +18,7 @@ class DeviceInfo {
     required this.height,
   });
 
+  /// Creates a DeviceInfo instance from the given Size.
   factory DeviceInfo.fromSize(Size size) {
     final width = size.width;
     final height = size.height;
@@ -27,6 +29,7 @@ class DeviceInfo {
     return DeviceInfo(screenType: screenType, orientation: orientation, screenSize: size, width: width, height: height);
   }
 
+  /// Determines the ScreenType based on width and orientation.
   static ScreenType _getScreenType(double width, Orientation orientation) {
     if (width < 600) {
       return ScreenType.mobile;
@@ -39,6 +42,7 @@ class DeviceInfo {
     }
   }
 
+  /// Convenience getters for screen types and orientations.
   bool get isMobile => screenType == ScreenType.mobile;
   bool get isTablet => screenType == ScreenType.tablet;
   bool get isDesktop => screenType == ScreenType.desktop;
@@ -46,6 +50,7 @@ class DeviceInfo {
   bool get isPortrait => orientation == Orientation.portrait;
   bool get isLandscape => orientation == Orientation.landscape;
 
+  /// String representation of DeviceInfo.
   @override
   String toString() {
     return 'DeviceInfo(type: $screenType, orientation: $orientation, size: $screenSize)';

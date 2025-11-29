@@ -1,8 +1,14 @@
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:pro_responsive/pro_responsive.dart';
 
+import 'responsive_grid_example.dart';
+import 'responsive_list_example.dart';
+
 void main() {
   runApp(const MyApp());
+  //runApp(ResponsiveGridExampleApp());
+  //runApp(const ResponsiveListExampleApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -84,7 +90,7 @@ class MyHomePage extends StatelessWidget {
         },
 
         // Alternative specific builders
-        mobileBuilder: MobileHorizontalLayout(), //deviceInfo.isPortrait ? null : const MobileHorizontalLayout(),
+        mobileBuilder: context.isPortrait ? null : const MobileHorizontalLayout(),
       ),
     );
   }

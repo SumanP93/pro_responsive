@@ -3,15 +3,33 @@ import 'package:flutter/material.dart';
 import '../responsive_builder.dart';
 import '../screen_type.dart';
 
+/// A text widget that adjusts its font size based on the device type.
 class ResponsiveText extends StatelessWidget {
+  /// The text to display.
   final String text;
+
+  /// The font size for mobile screens.
   final double mobileFontSize;
+
+  /// The font size for tablet screens.
   final double? tabletFontSize;
+
+  /// The font size for desktop screens.
   final double? desktopFontSize;
+
+  /// The font size for TV screens.
   final double? tvFontSize;
+
+  /// The style to apply to the text.
   final TextStyle? style;
+
+  /// The alignment of the text.
   final TextAlign? textAlign;
+
+  /// The maximum number of lines for the text.
   final int? maxLines;
+
+  /// How visual overflow should be handled.
   final TextOverflow? overflow;
 
   const ResponsiveText(

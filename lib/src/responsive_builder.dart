@@ -2,8 +2,12 @@ import 'package:flutter/material.dart';
 
 import 'device_info.dart';
 
+/// A widget that builds different layouts based on device type and orientation.
 class ResponsiveBuilder extends StatelessWidget {
+  /// The general builder function that provides device information.
   final Widget Function(BuildContext context, DeviceInfo deviceInfo) builder;
+
+  /// Optional builders for specific device types and orientations.
   final Widget? mobileBuilder;
   final Widget? tabletBuilder;
   final Widget? desktopBuilder;

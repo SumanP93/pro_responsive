@@ -4,11 +4,21 @@ import '../responsive_builder.dart';
 import '../responsive_extensions.dart';
 import '../screen_type.dart';
 
+/// A row that adjusts the number of items per row based on the device type.
 class ResponsiveRow extends StatelessWidget {
+  /// The list of child widgets to display in the row.
   final List<Widget> children;
+
+  /// The alignment of the row's children along the main axis.
   final MainAxisAlignment mainAxisAlignment;
+
+  /// The alignment of the row's children along the cross axis.
   final CrossAxisAlignment crossAxisAlignment;
+
+  /// Whether to expand each child to fill the available space.
   final bool expandChildren;
+
+  /// The padding around the row.
   final EdgeInsetsGeometry? padding;
 
   // This helps control how widgets wrap based on screen size
