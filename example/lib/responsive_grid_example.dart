@@ -2,9 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:pro_responsive/pro_responsive.dart';
 
 /// Example demonstrating efficient usage of ResponsiveGrid with all three constructors
-void main() {
-  runApp(const ResponsiveGridExampleApp());
-}
 
 class ResponsiveGridExampleApp extends StatelessWidget {
   const ResponsiveGridExampleApp({super.key});
@@ -65,10 +62,10 @@ class SmallListExample extends StatelessWidget {
 
               // Traditional usage - backward compatible
               ResponsiveGrid(
-                children: List.generate(12, (index) => _buildGridItem(index, Colors.blue)),
                 spacing: 12,
                 runSpacing: 12,
                 padding: const EdgeInsets.all(8),
+                children: List.generate(12, (index) => _buildGridItem(index, Colors.blue)),
               ),
             ],
           ),

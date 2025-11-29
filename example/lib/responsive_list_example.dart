@@ -2,9 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:pro_responsive/pro_responsive.dart';
 
 /// Comprehensive examples demonstrating ResponsiveList with all features
-void main() {
-  runApp(const ResponsiveListExampleApp());
-}
 
 class ResponsiveListExampleApp extends StatelessWidget {
   const ResponsiveListExampleApp({super.key});
