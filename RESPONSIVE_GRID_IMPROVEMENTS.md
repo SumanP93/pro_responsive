@@ -201,7 +201,7 @@ ResponsiveGrid.builder(
 
 ## 📝 Complete Example
 
-See [responsive_grid_example.dart](./example/responsive_grid_example.dart) for a comprehensive demonstration of all three constructors.
+See [responsive_grid_example.dart](./example/lib/responsive_grid_example.dart) for a comprehensive demonstration of all three constructors.
 
 ---
 
