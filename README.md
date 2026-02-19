@@ -43,7 +43,9 @@ Add the dependency to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  pro_responsive: ^0.0.1
+  pro_responsive:
+    git:
+      url: https://github.com/SumanP93/pro_responsive.git  
 ```
 
 Then run:
